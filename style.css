@@ -417,6 +417,9 @@ th {
         margin: 0;
         border-left: none;
     }
+    .notebook-container::before {
+        display: none;
+    }
     header h1 {
         font-size: 1.8rem;
     }

@@ -197,6 +197,7 @@ body {
     padding: 12px 20px;
     border-radius: 50px;
     margin-bottom: 40px;
+    max-width: 100%; /* Prevent overflow */
 }
 
 .editor-avatar {
@@ -222,12 +223,14 @@ body {
     font-size: 12px;
     font-weight: 900;
     margin: 0;
+    white-space: nowrap; /* Ensure one line */
 }
 
 .editor-desc {
     font-size: 10px;
     opacity: 0.7;
     margin: 0;
+    white-space: nowrap; /* Ensure one line */
 }
 
 .hero-scroll-btn {
@@ -656,4 +659,11 @@ th {
 
 @media (max-width: 768px) {
     .site-wrapper { padding-bottom: 70px; }
+}
+
+@media (max-width: 480px) {
+    .editor-box { padding: 8px 15px; gap: 8px; }
+    .editor-avatar { width: 36px; height: 36px; }
+    .editor-name { font-size: 11px; }
+    .editor-desc { font-size: 9px; }
 }
